@@ -1,0 +1,463 @@
+/*---------------------------------*/
+/*       Basic Setup              */
+/*---------------------------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+/*---------------------------------*/
+/*       Reusable Components       */
+/*---------------------------------*/
+
+.row{
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+}
+
+section{
+    padding: 80px 10px;
+}
+
+.box{
+    margin: 0 5px;
+    display: block;
+    padding: 0 20px;
+}
+/*---------------------------------*/
+/*         Header                  */
+/*---------------------------------*/
+
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/backgroundimg2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: centered;
+    background-attachment: fixed;
+}
+
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/*---------------------------------*/
+/*         headding                */
+/*---------------------------------*/
+h1,
+h2,
+h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: #fff;
+    font-size: 290%;
+     word-spacing: 5px;
+    
+}
+h2{
+    margin-bottom: 30px;
+    font-size: 200%;
+    text-align: center;
+    word-spacing: 3px;
+    
+}
+h3{
+    font-size: 150%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+/*---------------------------------*/
+/*         underline               */
+/*---------------------------------*/
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+h3:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*---------------------------------*/
+/*         paragraph               */
+/*---------------------------------*/
+.armed-class {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.box p{
+    line-height: 145%;
+    font-size: 100%;
+}
+
+/*---------------------------------*/
+/*         Buttons                 */
+/*---------------------------------*/
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+    
+}
+
+
+.army-btn:link,
+.army-btn:visited{
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin: 50px;
+    text-decoration: none;
+}
+
+.navy-btn:link,
+.navy-btn:visited{
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin: 50px;
+}
+
+.air-btn:link,
+.air-btn:visited{
+    border: 1px solid #e67e22;
+    color: #ffffff;
+    margin: 50px;
+}
+
+
+.btn:hover,
+.btn:active{
+    background-color: #e2720f;
+}
+
+
+.army-btn:hover,
+.army-btn:active{
+    border: 1px solid #e2720f;
+    
+}
+
+.navy-btn:hover,
+.navy-btn:active{
+    border: 1px solid #e2720f;
+    
+}
+
+.air-btn:hover,
+.air-btn:active{
+    border: 1px solid #e2720f;
+    
+}
+
+.all-button {
+    position: absolute;
+    width: 1140px;
+    top:80%;
+    left:15%;
+    margin-top: 90px;
+    
+}
+/*------All logo--------------*/
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo2{
+    display: none;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin: 6px 0;
+}
+
+.Army-logo {
+    height: 110px;
+    width: auto;
+    position: absolute;
+    left: 130px;
+    padding-top:10px;
+    
+}
+
+.navy-logo {
+    height: 120px;
+    width: auto;
+    position: absolute;
+    left: 410px;
+}
+
+.air-logo {
+    height: 120px;
+    width: auto;
+    position: absolute;
+    left: 680px;
+}
+
+/*----------All Flag-------------*/
+
+.Army-flag {
+    height: 100px;
+    width: auto;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+.navy-flag {
+    height: 100px;
+    width: auto;
+     display: block;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid rgba(173, 224, 247, 0.81);
+}
+
+.air-flag {
+    height: 100px;
+    width: auto;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+/*---------------------------------*/
+/*         Navigation              */
+/*---------------------------------*/
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 55px;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left:40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+    
+
+}
+/*---------------------------------*/
+/*       Sticky Navigation         */
+/*---------------------------------*/
+
+         
+.sticky .main-nav{
+    margin-top: 15px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 2px 2px rgba(234, 230, 230, 0.96);
+    z-index: 9999;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 15px 0;
+    color: #555;
+} 
+.sticky .logo{ 
+    display: none;
+}
+.sticky .logo2{
+    display: block;
+}
+
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+
+/*---------------------------------*/
+/*         footer                  */
+/*---------------------------------*/
+footer{
+    background-color: #4d4a4a;
+    padding: 50px;
+    font-size: 120%;
+    
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-link {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-link li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.footer-nav li:last-child,
+.social-link li:last-child{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited{
+    text-decoration: none;
+    color: #7e7e7e;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+/*---------------------------------*/
+/*         footer transition       */
+/*---------------------------------*/
+.footer-nav li a{
+    transition: color 0.2s;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram,
+.ion-social-whatsapp,{
+    transition: color 0.2s;
+    
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-whatsapp:hover {
+    color: #25D366;
+}
+/*---------------------------------*/
+/*---------------------------------*/
+footer p{
+    color:#7e7e7e;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.button-img {
+    position: absolute;
+    
+}
+/*---------------------------------*/
+ /*---Animation -----------*/
+/*---------------------------------*/
+.js--wp-1{
+    opacity: 0;
+}
+.js--wp-1.animated{
+    opacity: 1;
+}
+
